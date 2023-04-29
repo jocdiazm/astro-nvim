@@ -6,6 +6,15 @@ return {
         tailwindcss = {},
       },
     },
+    settings = {
+      tailwindCSS = {
+        experimental = {
+          classRegex = {
+            { "cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]" },
+          },
+        },
+      },
+    },
   },
   {
     "NvChad/nvim-colorizer.lua",
