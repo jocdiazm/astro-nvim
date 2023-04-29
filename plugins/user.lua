@@ -15,4 +15,5 @@ return {
   vim.g.gruvbox_material_enable_italic = 1
   vim.g.gruvbox_material_ui_contrast= 'high'
 end,
-}}
+},
+}
