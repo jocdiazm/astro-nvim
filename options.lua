@@ -16,6 +16,7 @@ return {
     fileencoding = "utf-8", --use always international encoding
     backup = false, --prevent nasty use of backup files
     clipboard = "unnamedplus", --allows nwovim access the system clipboard
+    swapfile = false, --no nasty swapfiles
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader
