@@ -7,6 +7,15 @@ return {
     spell = false, -- sets vim.opt.spell
     signcolumn = "yes", -- sets vim.opt.signcolumn to auto
     wrap = false, -- sets vim.opt.wrap
+    mouse = "a", -- allows mouse to be use in neovim
+    smartindent = true, -- make indents smart again
+    termguicolors = true, -- support terminal colors
+    -- showtabline = 0, --disables tabline for more compact view
+    title = true, --show the title window
+    ruler = false, --do not show ruler
+    fileencoding = "utf-8", --use always international encoding
+    backup = false, --prevent nasty use of backup files
+    clipboard = "unnamedplus", --allows nwovim access the system clipboard
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader
