@@ -3,6 +3,7 @@
 -- references:
 -- https://github.com/nvim-neo-tree/neo-tree.nvim
 -- https://github.com/nvim-neo-tree/neo-tree.nvim/wiki/Recipes
+
 return {
   "nvim-neo-tree/neo-tree.nvim",
   dependencies = {
@@ -31,23 +32,18 @@ return {
           symbol = " ",
           highlight = "NeoTreeModified",
         },
-        icon = {
-          folder_closed = "",
-          folder_open = "",
-          folder_empty = "",
-          folder_empty_open = "",
-        },
+        icon = { folder_closed = "", folder_open = "", folder_empty = "", folder_empty_open = "" },
         git_status = {
           symbols = {
             -- Change type
             added = "",
             deleted = "",
             modified = "",
-            renamed = "",
+            renamed = "R",
             -- Status type
             untracked = "",
             ignored = "",
-            unstaged = "",
+            unstaged = "",
             staged = "",
             conflict = "",
           },

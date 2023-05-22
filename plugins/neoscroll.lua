@@ -2,7 +2,7 @@ return {
   {
     "karb94/neoscroll.nvim",
     enabled = true,
-    lazy = false,
+    lazy = "VeryLazy",
     opts = {
       easing_function = "quadratic",
       -- All these keys will be mapped to their corresponding default scrolling animation
