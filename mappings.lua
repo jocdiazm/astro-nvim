@@ -27,11 +27,12 @@ return {
     -- Navigate buffers
     ["<S-l>"] = { ":bnext<CR>", desc = "next buffer" },
     ["<S-h>"] = { ":bprevious<CR>", desc = "previous buffer" },
+    ["<leader>lt"] = { "<cmd>TroubleToggle<cr>", desc = "Toggle trouble" },
   },
   v = {
     -- paste over currently selected text without yanking it
-    ["p"] = { ":_dp" },
-    ["P"] = { '"_dP' },
+    -- ["p"] = { ":_dp" },
+    -- ["P"] = { '"_dP' },
   },
   t = {
     -- setting a mapping to false will disable it

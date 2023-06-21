@@ -39,9 +39,11 @@ return {
   {
     "NvChad/nvim-colorizer.lua",
     opts = {
+      filetypes = { "css", "html", "astro", "vue", "javascript", "typescript", "typescriptreact" },
       user_default_options = {
         names = true,
         tailwind = true,
+        -- mode = "virtualtext",
       },
     },
   },
