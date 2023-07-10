@@ -41,7 +41,8 @@ return {
           base = "#202020",
           -- mantle = "#191C1D",
           mantle = "#202020",
-          crust = "#151819",
+          -- crust = "#151819",
+          crust = "#242424",
         },
         latte = {
           rosewater = "#c14a4a",
