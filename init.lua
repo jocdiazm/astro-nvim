@@ -52,6 +52,20 @@ return {
     servers = {
       -- "pyright"
     },
+    config = {
+      tailwindcss = {
+        settings = {
+          tailwindCSS = {
+            experimental = {
+              classRegex = {
+                { "cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]" },
+                { "cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)" },
+              },
+            },
+          },
+        },
+      },
+    },
   },
 
   -- Configure require("lazy").setup() options

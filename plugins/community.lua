@@ -4,6 +4,8 @@ return {
   -- example of importing a plugin, comment out to use it or add your own
   -- available plugins can be found at https://github.com/AstroNvim/astrocommunity
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
+
+  { import = "astrocommunity.editing-support.ultimate-autopair-nvim" },
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.utility.noice-nvim" },
   { import = "astrocommunity.pack.typescript" },
