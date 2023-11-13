@@ -1,6 +1,7 @@
 return {
   {
     "catppuccin/nvim",
+    lazy = false,
     name = "catppuccin",
     priority = 1000,
     opts = {
@@ -72,5 +73,19 @@ return {
         additional_vim_regex_highlighting = false,
       },
     },
+  },
+  {
+    "sainnhe/sonokai",
+    init = function() -- init function runs before the plugin is loaded
+      vim.g.sonokai_style = "shusia"
+    end,
+  },
+  {
+    "sainnhe/gruvbox-material",
+    lazy = false,
+  },
+  {
+    "sainnhe/everforest",
+    lazy = false,
   },
 }

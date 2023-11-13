@@ -5,8 +5,17 @@ return {
     relativenumber = true, -- sets vim.opt.relativenumber
     number = true, -- sets vim.opt.number
     spell = false, -- sets vim.opt.spell
-    signcolumn = "auto", -- sets vim.opt.signcolumn to auto
-    wrap = false, -- sets vim.opt.wrap
+    signcolumn = "yes", -- sets vim.opt.signcolumn to auto
+    wrap = true, -- sets vim.opt.wrap
+    mouse = "a", -- allows mouse to be used
+    backup = false, --no backups
+    clipboard = "unnamedplus", --"allows newovim to access the clipboard"
+    swapfile = false, -- no swap files
+    scrolloff = 15, --mantain at least 10 lines
+    cursorline = false, --disable cursorline
+    pumblend = 0, --no annoying transparency issues
+    list = false, --no showwing invisible characters
+    conceallevel = 0, --no hiding important stuff
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader
