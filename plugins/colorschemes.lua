@@ -1,3 +1,4 @@
+---@diagnostic disable: 112
 return {
   {
     "catppuccin/nvim",
@@ -89,10 +90,15 @@ return {
       vim.g.gruvbox_material_background = "hard"
       vim.g.gruvbox_material_float_style = "dim"
       vim.g.gruvbox_material_better_performance = 1
+      vim.g.gruvbox_material_ui_contrast = "low"
+      -- vim.g.gruvbox_material_transparent_background = 2
     end,
   },
   {
     "sainnhe/everforest",
     lazy = false,
   },
+  { "dasupradyumna/midnight.nvim", lazy = false, priority = 1000 },
+  { "projekt0n/github-nvim-theme", lazy = false, priority = 1000 },
+  { "rose-pine/neovim", name = "rose-pine", lazy = false, priority = 1000 },
 }
