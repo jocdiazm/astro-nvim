@@ -83,6 +83,7 @@ return {
   },
   {
     "sainnhe/gruvbox-material",
+    priority = 1000,
     lazy = false,
     init = function() -- init function runs before the plugin is loaded
       vim.g.gruvbox_material_enable_italic = 1
@@ -97,8 +98,90 @@ return {
   {
     "sainnhe/everforest",
     lazy = false,
+    priority = 1000,
   },
   { "dasupradyumna/midnight.nvim", lazy = false, priority = 1000 },
-  { "projekt0n/github-nvim-theme", lazy = false, priority = 1000 },
+  -- { "projekt0n/github-nvim-theme", lazy = false, priority = 1000 },
   { "rose-pine/neovim", name = "rose-pine", lazy = false, priority = 1000 },
+  { "folke/tokyonight.nvim", lazy = false, priority = 1000 },
+  { "Mofiqul/dracula.nvim", lazy = false, priority = 1000 },
+  {
+    "loctvl842/monokai-pro.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {
+      terminal_colors = true,
+      devicons = true, -- highlight the icons of `nvim-web-devicons`
+      filter = "pro", -- classic | octagon | pro | machine | ristretto | spectrum
+      plugins = {
+        indent_blankline = {
+          context_highlight = "pro", -- default | pro
+          context_start_underline = false,
+        },
+      },
+    },
+  },
+  {
+    "AlexvZyl/nordic.nvim",
+    lazy = false,
+    priority = 1000,
+    config = function() require("nordic").load() end,
+  },
+  {
+    "shaunsingh/nord.nvim",
+    lazy = false,
+    priority = 1000,
+    init = function()
+      vim.g.nord_contrast = true
+      vim.g.nord_borders = false
+      vim.g.nord_disable_background = false
+      vim.g.nord_italic = false
+      vim.g.nord_uniform_diff_background = true
+      vim.g.nord_bold = false
+    end,
+  },
+  {
+    "lukas-reineke/headlines.nvim",
+    lazy = false,
+    priority = 1000,
+    optional = true,
+    opts = {
+      markdown = {
+        headline_highlights = {
+          "Headline1",
+          "Headline2",
+          "Headline3",
+          "Headline4",
+          "Headline5",
+          "Headline6",
+        },
+      },
+    },
+  },
+  {
+    "akinsho/bufferline.nvim",
+
+    lazy = false,
+    priority = 1000,
+    optional = true,
+    opts = function(_, opts)
+      return require("astronvim.utils").extend_tbl(opts, {
+        highlights = require("nord").bufferline.highlights { italic = true, bold = true },
+        options = { separator_style = "thin" },
+      })
+    end,
+  },
+  {
+    "olimorris/onedarkpro.nvim",
+
+    lazy = false,
+    priority = 1000,
+    opts = {
+      options = {
+        highlight_inactive_windows = true,
+      },
+    },
+  },
+
+  { "nyoom-engineering/oxocarbon.nvim", lazy = false, priority = 1000 },
 }

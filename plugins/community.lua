@@ -16,4 +16,5 @@ return {
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.motion.mini-surround" },
   { import = "astrocommunity.editing-support.mini-splitjoin" },
+  { import = "astrocommunity.lsp.inc-rename-nvim" },
 }

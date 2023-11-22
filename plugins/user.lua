@@ -27,4 +27,13 @@ return {
     "folke/flash.nvim",
     enabled = false,
   },
+  {
+    "folke/noice.nvim",
+    opts = {
+      presets = {
+        lsp_doc_border = true, -- add a border to hover docs and signature help
+        command_palette = true, -- position the cmdline and popupmenu together
+      },
+    },
+  },
 }

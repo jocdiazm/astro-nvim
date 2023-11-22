@@ -30,6 +30,8 @@ return {
     -- disable ugly winbar
     opts.winbar = nil
 
+    -- disable ugly winbar
+
     -- return the final configuration table
     return opts
   end,
