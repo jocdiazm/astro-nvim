@@ -16,6 +16,10 @@ return {
   },
   opts = {
     close_if_last_window = true, --og true
+    sources = {
+      "filesystem",
+    },
+    auto_clean_after_session_restore = true, --Automatically clean up broken buffers
     popup_border_style = "rounded",
     enable_git_status = true,
     enable_modified_markers = true,
@@ -48,8 +52,7 @@ return {
       },
     },
     window = {
-      position = "left",
-      -- width = "100%",
+      position = "current",
     },
     filesystem = {
       use_libuv_file_watcher = true,

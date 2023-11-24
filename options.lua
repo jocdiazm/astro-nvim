@@ -12,7 +12,8 @@ return {
     clipboard = "unnamedplus", --"allows newovim to access the clipboard"
     swapfile = false, -- no swap files
     scrolloff = 15, --mantain at least 10 lines
-    cursorline = false, --disable cursorline
+    cursorline = true, --disable cursorline
+    cursorlineopt = "number", --disable cursorline
     pumblend = 0, --no annoying transparency issues
     list = false, --no showwing invisible characters
     conceallevel = 0, --no hiding important stuff
