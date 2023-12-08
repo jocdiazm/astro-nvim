@@ -18,4 +18,7 @@ return {
   { import = "astrocommunity.editing-support.mini-splitjoin" },
   { import = "astrocommunity.lsp.inc-rename-nvim" },
   { import = "astrocommunity.completion.copilot-lua" },
+  { import = "astrocommunity.git.diffview-nvim" },
+  { import = "astrocommunity.git.git-blame-nvim" },
+  { import = "astrocommunity.git.openingh-nvim" },
 }
