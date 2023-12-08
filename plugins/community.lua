@@ -17,4 +17,5 @@ return {
   { import = "astrocommunity.motion.mini-surround" },
   { import = "astrocommunity.editing-support.mini-splitjoin" },
   { import = "astrocommunity.lsp.inc-rename-nvim" },
+  { import = "astrocommunity.completion.copilot-lua" },
 }

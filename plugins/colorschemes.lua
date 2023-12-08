@@ -186,4 +186,5 @@ return {
   { "nyoom-engineering/oxocarbon.nvim", lazy = false, priority = 1000 },
   { "savq/melange-nvim", lazy = false, priority = 1000 },
   { "AstroNvim/astrotheme", lazy = false, priority = 1000 },
+  { "LunarVim/primer.nvim", lazy = false, priority = 1000 },
 }
