@@ -187,6 +187,7 @@ return {
   { "savq/melange-nvim", lazy = false, priority = 1000 },
   { "AstroNvim/astrotheme", lazy = false, priority = 1000 },
   { "LunarVim/primer.nvim", lazy = false, priority = 1000 },
+  { "marko-cerovac/material.nvim", lazy = false, priority = 1000 },
   {
     "olivercederborg/poimandres.nvim",
     lazy = false,

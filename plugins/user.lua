@@ -10,20 +10,6 @@ return {
   --   end,
   -- },
   {
-    "lukas-reineke/indent-blankline.nvim",
-    enabled = false,
-    main = "ibl",
-    opts = {
-      -- indent = {
-      -- char = "|",
-      -- smart_indent_cap = true,
-      -- },
-      scope = {
-        enabled = true,
-      },
-    },
-  },
-  {
     "folke/flash.nvim",
     enabled = false,
   },
