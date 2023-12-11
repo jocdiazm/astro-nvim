@@ -60,7 +60,7 @@ return {
           },
         },
         flash = true,
-        illuminate = true,
+        illuminate = false,
         indent_blankline = { enabled = true },
       },
     },
@@ -187,4 +187,13 @@ return {
   { "savq/melange-nvim", lazy = false, priority = 1000 },
   { "AstroNvim/astrotheme", lazy = false, priority = 1000 },
   { "LunarVim/primer.nvim", lazy = false, priority = 1000 },
+  {
+    "olivercederborg/poimandres.nvim",
+    lazy = false,
+    priority = 1000,
+    config = function() require("poimandres").setup {} end,
+
+    -- optionally set the colorscheme within lazy config
+    init = function() vim.cmd "colorscheme poimandres" end,
+  },
 }
