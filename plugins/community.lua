@@ -22,4 +22,5 @@ return {
   { import = "astrocommunity.git.git-blame-nvim" },
   { import = "astrocommunity.git.openingh-nvim" },
   { import = "astrocommunity.indent.indent-blankline-nvim" },
+  { import = "astrocommunity.lsp.lsp-signature-nvim" },
 }
