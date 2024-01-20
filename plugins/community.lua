@@ -14,6 +14,7 @@ return {
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.bash" },
   { import = "astrocommunity.pack.python" },
+  { import = "astrocommunity.motion.tabout-nvim" },
   { import = "astrocommunity.motion.mini-surround" },
   { import = "astrocommunity.editing-support.mini-splitjoin" },
   { import = "astrocommunity.lsp.inc-rename-nvim" },

@@ -15,6 +15,9 @@ return {
   },
   { "rafamadriz/friendly-snippets" },
   {
+    "molleweide/LuaSnip-snippets.nvim",
+  },
+  {
     "L3MON4D3/LuaSnip",
     dependencies = { "rafamadriz/friendly-snippets" },
     run = "make install_jsregexp",
@@ -26,7 +29,7 @@ return {
       "L3MON4D3/LuaSnip",
       "saadparwaiz1/cmp_luasnip",
       "rafamadriz/friendly-snippets",
-      "abecodes/tabout.nvim",
+      "molleweide/LuaSnip-snippets.nvim",
       "zbirenbaum/copilot.lua",
     },
     -- override the options table that is used in the `require("cmp").setup()` call
@@ -37,7 +40,6 @@ return {
         expand = function(args) luasnip.lsp_expand(args.body) end,
       }
       local cmp = require "cmp"
-      local tabout = require "tabout"
       -- copilot
       local copilot = require "copilot.suggestion"
 
@@ -53,13 +55,8 @@ return {
       opts.mapping["<Tab>"] = cmp.mapping(function(fallback)
         if luasnip.expand_or_jumpable() then
           luasnip.expand_or_jump() --original working
-        -- vim.fn.feedkeys(vim.api.nvim_replace_termcodes("<Plug>luasnip-expand-or-jump", true, true, true), "")
-        elseif vim.api.nvim_get_mode().mode == "i" then
-          tabout.tabout()
         elseif cmp.visible() then
           cmp.select_next_item()
-        -- You could replace the expand_or_jumpable() calls with expand_or_locally_jumpable()
-        -- they way you will only jump inside the snippet region
         elseif has_words_before() then
           cmp.complete()
         else
