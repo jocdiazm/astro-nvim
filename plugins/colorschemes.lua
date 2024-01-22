@@ -197,4 +197,12 @@ return {
     -- optionally set the colorscheme within lazy config
     init = function() vim.cmd "colorscheme poimandres" end,
   },
+  {
+    "2nthony/vitesse.nvim",
+    lazy = false,
+    priority = 1000,
+    dependencies = {
+      "tjdevries/colorbuddy.nvim",
+    },
+  },
 }

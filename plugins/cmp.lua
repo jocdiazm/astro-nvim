@@ -13,7 +13,7 @@ return {
     event = "User AstroFile",
     opts = { suggestion = { auto_trigger = true, debounce = 500 } },
   },
-  { "rafamadriz/friendly-snippets" },
+  -- { "rafamadriz/friendly-snippets" },
   {
     "molleweide/LuaSnip-snippets.nvim",
   },
@@ -28,7 +28,7 @@ return {
       "hrsh7th/cmp-nvim-lsp",
       "L3MON4D3/LuaSnip",
       "saadparwaiz1/cmp_luasnip",
-      "rafamadriz/friendly-snippets",
+      -- "rafamadriz/friendly-snippets",
       "molleweide/LuaSnip-snippets.nvim",
       "zbirenbaum/copilot.lua",
     },
