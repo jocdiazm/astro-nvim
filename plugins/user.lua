@@ -20,10 +20,14 @@ return {
         lsp_doc_border = true, -- add a border to hover docs and signature help
         command_palette = true, -- position the cmdline and popupmenu together
       },
+      messages = {
+        view_search = false, -- view for search count messages. Set to `false` to disable
+      },
     },
   },
   {
     "ray-x/lsp_signature.nvim",
+    enabled = false,
     event = "VeryLazy",
     opts = {
       doc_lines = 0, -- will show two lines of comment/doc(if there are more than two lines in doc, will be truncated);

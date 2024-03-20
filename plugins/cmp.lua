@@ -11,7 +11,7 @@ return {
     "zbirenbaum/copilot.lua",
     cmd = "Copilot",
     event = "User AstroFile",
-    opts = { suggestion = { auto_trigger = true, debounce = 500 } },
+    opts = { suggestion = { auto_trigger = true, debounce = 700 } },
   },
   -- { "rafamadriz/friendly-snippets" },
   {
@@ -75,11 +75,11 @@ return {
       end, { "i", "s" })
 
       --Copilot mapping
-      opts.mapping["<C-x>"] = cmp.mapping(function()
+      opts.mapping["<C-n>"] = cmp.mapping(function()
         if copilot.is_visible() then copilot.next() end
       end)
 
-      opts.mapping["<C-z>"] = cmp.mapping(function()
+      opts.mapping["<C-p>"] = cmp.mapping(function()
         if copilot.is_visible() then copilot.prev() end
       end)
 
@@ -87,7 +87,7 @@ return {
         if copilot.is_visible() then copilot.dismiss() end
       end)
 
-      opts.mapping["<C-l>"] = cmp.mapping(function()
+      opts.mapping["<C-y>"] = cmp.mapping(function()
         if copilot.is_visible() then copilot.accept() end
       end)
 

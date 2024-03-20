@@ -12,7 +12,6 @@ return {
   { import = "astrocommunity.pack.astro" },
   { import = "astrocommunity.pack.tailwindcss" },
   { import = "astrocommunity.pack.lua" },
-  { import = "astrocommunity.pack.bash" },
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.pack.ruby" },
   { import = "astrocommunity.pack.svelte" },
