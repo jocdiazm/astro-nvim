@@ -12,27 +12,7 @@ return {
   ---@type AstroUIOpts
   opts = {
     -- change colorscheme
-    colorscheme = "catppuccin",
-    -- highlights = {
-    --   init = {
-    --     CursorLineNr = {
-    --       -- fg = "#94e2d5",
-    --       fg = catppuccin_colors.cyan,
-    --     },
-    --   },
-    --   catppuccin = {
-    --     CursorLineNr = {
-    --       -- fg = "#94e2d5",
-    --       fg = catppuccin_colors.cyan,
-    --     },
-    --     TreesitterContext = {
-    --       bg = "#1c1c2c",
-    --     },
-    --     TreesitterContextLineNumber = {
-    --       fg = "#f2cdcd",
-    --     },
-    --   },
-    -- },
+    colorscheme = "gruvbox-material",
     -- AstroUI allows you to easily modify highlight groups easily for any and all colorschemes
     highlights = {
       init = { -- this table overrides highlights in all themes

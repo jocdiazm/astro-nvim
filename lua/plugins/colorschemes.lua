@@ -98,6 +98,15 @@ return {
     "sainnhe/everforest",
     lazy = false,
     priority = 1000,
+
+    init = function() -- init function runs before the plugin is loaded
+      vim.g.everforest_enable_italic = 1
+      vim.g.everforest_enable_bold = 1
+      vim.g.everforest_background = "hard"
+      vim.g.everforest_float_style = "dim"
+      vim.g.everforest_better_performance = 1
+      vim.g.everforest_ui_contrast = "high"
+    end,
   },
   { "dasupradyumna/midnight.nvim", lazy = false, priority = 1000 },
   -- { "projekt0n/github-nvim-theme", lazy = false, priority = 1000 },
@@ -124,7 +133,6 @@ return {
     "AlexvZyl/nordic.nvim",
     lazy = false,
     priority = 1000,
-    -- config = function() require("nordic").load() end,
   },
   {
     "shaunsingh/nord.nvim",
