@@ -11,7 +11,7 @@ return {
     "zbirenbaum/copilot.lua",
     cmd = "Copilot",
     event = "User AstroFile",
-    opts = { suggestion = { auto_trigger = true, debounce = 700 } },
+    opts = { suggestion = { auto_trigger = true, debounce = 500 } },
   },
   -- { "rafamadriz/friendly-snippets" },
   {

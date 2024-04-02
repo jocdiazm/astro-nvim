@@ -9,6 +9,8 @@ return {
   "AstroNvim/astrocommunity",
   -- themes
   { import = "astrocommunity.colorscheme.catppuccin" },
+  -- completion
+  { import = "astrocommunity.completion.copilot-lua" },
   -- motion
   -- { import = "astrocommunity.motion.leap-nvim" },
   -- utilities

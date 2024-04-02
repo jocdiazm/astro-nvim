@@ -1,5 +1,6 @@
 -- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
+local catppuccin_colors = require "catppuccin.palettes.mocha"
 -- AstroUI provides the basis for configuring the AstroNvim User Interface
 -- Configuration documentation can be found with `:h astroui`
 -- NOTE: We highly recommend setting up the Lua Language Server (`:LspInstall lua_ls`)
@@ -11,16 +12,38 @@ return {
   ---@type AstroUIOpts
   opts = {
     -- change colorscheme
-    colorscheme = "catppuccin-mocha",
-    -- AstroUI allows you to easily modify highlight groups easily for any and all colorschemes
+    colorscheme = "catppuccin",
     -- highlights = {
-    --   init = { -- this table overrides highlights in all themes
-    --     -- Normal = { bg = "#000000" },
+    --   init = {
+    --     CursorLineNr = {
+    --       -- fg = "#94e2d5",
+    --       fg = catppuccin_colors.cyan,
+    --     },
     --   },
-    --   astrotheme = { -- a table of overrides/changes when applying the astrotheme theme
-    --     -- Normal = { bg = "#000000" },
+    --   catppuccin = {
+    --     CursorLineNr = {
+    --       -- fg = "#94e2d5",
+    --       fg = catppuccin_colors.cyan,
+    --     },
+    --     TreesitterContext = {
+    --       bg = "#1c1c2c",
+    --     },
+    --     TreesitterContextLineNumber = {
+    --       fg = "#f2cdcd",
+    --     },
     --   },
     -- },
+    -- AstroUI allows you to easily modify highlight groups easily for any and all colorschemes
+    highlights = {
+      init = { -- this table overrides highlights in all themes
+        CursorLineNr = {
+          fg = catppuccin_colors.pink,
+        },
+      },
+      astrotheme = { -- a table of overrides/changes when applying the astrotheme theme
+        -- Normal = { bg = "#000000" },
+      },
+    },
     -- -- Icons can be configured throughout the interface
     -- icons = {
     --   -- configure the loading of the lsp in the status line
