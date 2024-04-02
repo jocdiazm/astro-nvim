@@ -6,13 +6,17 @@
 
 ---@type LazySpec
 return {
-  -- Add the community repository of plugin specifications
   "AstroNvim/astrocommunity",
-  -- example of importing a plugin
-  -- available plugins can be found at https://github.com/AstroNvim/astrocommunity
+  -- themes
   { import = "astrocommunity.colorscheme.catppuccin" },
+  -- motion
+  -- { import = "astrocommunity.motion.leap-nvim" },
+  -- utilities
+  { import = "astrocommunity.utility.noice-nvim" },
+  -- packs
+  { import = "astrocommunity.pack.docker" },
+  { import = "astrocommunity.pack.sql" },
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.python" },
 }
--- import/override with your plugins folder
