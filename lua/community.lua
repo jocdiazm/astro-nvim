@@ -9,6 +9,8 @@ return {
   { import = "astrocommunity.colorscheme.catppuccin" },
   -- completion
   { import = "astrocommunity.completion.copilot-lua" },
+  -- diagnostics
+  { import = "astrocommunity.diagnostics.trouble-nvim" },
   -- motion
   -- { import = "astrocommunity.motion.leap-nvim" },
   -- utilities
