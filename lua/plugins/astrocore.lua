@@ -27,6 +27,7 @@ return {
     -- vim options can be configured here
     options = {
       opt = { -- vim.opt.<key>
+        cursorline = false, --sets vim.opt.cursorlineStro
         swapfile = false, -- sets vim.opt.swapfile
         relativenumber = true, -- sets vim.opt.relativenumber
         number = true, -- sets vim.opt.number
