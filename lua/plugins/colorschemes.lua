@@ -212,4 +212,5 @@ return {
       "tjdevries/colorbuddy.nvim",
     },
   },
+  { "datsfilipe/vesper.nvim", lazy = false, priority = 1000 },
 }
