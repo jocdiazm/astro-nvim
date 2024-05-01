@@ -17,6 +17,13 @@ return {
         CursorLineNr = {
           fg = catppuccin_colors.pink,
         },
+        StatusLine = { blend = 0 },
+        TablineFill = { blend = 0 },
+        WinBar = { blend = 0 },
+        WinBarNC = { blend = 0 },
+        LspReferenceRead = { blend = 0 },
+        LspReferenceWrite = { blend = 0 },
+        LspReferenceText = { blend = 0 },
       },
       astrotheme = { -- a table of overrides/changes when applying the astrotheme theme
         -- Normal = { bg = "#000000" },

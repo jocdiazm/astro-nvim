@@ -90,7 +90,7 @@ return {
       vim.g.gruvbox_material_background = "hard"
       vim.g.gruvbox_material_float_style = "dim"
       vim.g.gruvbox_material_better_performance = 1
-      vim.g.gruvbox_material_ui_contrast = "low"
+      vim.g.gruvbox_material_ui_contrast = "high"
       -- vim.g.gruvbox_material_transparent_background = 2
     end,
   },
@@ -98,19 +98,47 @@ return {
     "sainnhe/everforest",
     lazy = false,
     priority = 1000,
-
     init = function() -- init function runs before the plugin is loaded
       vim.g.everforest_enable_italic = 1
       vim.g.everforest_enable_bold = 1
       vim.g.everforest_background = "hard"
       vim.g.everforest_float_style = "dim"
       vim.g.everforest_better_performance = 1
-      vim.g.everforest_ui_contrast = "high"
+      -- vim.g.everforest_ui_contrast = "high"
     end,
   },
   { "dasupradyumna/midnight.nvim", lazy = false, priority = 1000 },
-  -- { "projekt0n/github-nvim-theme", lazy = false, priority = 1000 },
-  { "rose-pine/neovim", name = "rose-pine", lazy = false, priority = 1000 },
+  {
+    "rose-pine/neovim",
+    name = "rose-pine",
+    lazy = false,
+    priority = 1000,
+    opts = {
+      styles = {
+        bold = true,
+        italic = false,
+      },
+      highlight_groups = {
+        Comment = { italic = true },
+        ColorColumn = { bg = "rose" },
+        -- Blend colours against the "base" background
+        CursorLine = { bg = "foam", blend = 10 },
+        StatusLine = { blend = 0 },
+        IlluminatedWordRead = { bg = "#e84220" },
+        IlluminatedWordText = { bg = "#e84220" },
+        IlluminatedWordWrite = { bg = "#e84220" },
+
+        TablineFill = {
+          blend = 0,
+        },
+        -- By default each group adds to the existing config.
+        -- If you only want to set what is written in this config exactly,
+        -- you can set the inherit option:
+        -- Search = { bg = "black", inherit = false },
+      },
+    },
+  },
+  { "projekt0n/github-nvim-theme", name = "github", lazy = false, priority = 1000 },
   { "folke/tokyonight.nvim", lazy = false, priority = 1000 },
   { "Mofiqul/dracula.nvim", lazy = false, priority = 1000 },
   {
