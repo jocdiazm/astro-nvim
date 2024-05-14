@@ -7,6 +7,8 @@ return {
   "AstroNvim/astrocommunity",
   -- themes
   { import = "astrocommunity.colorscheme.catppuccin" },
+  -- bars and lines
+  { import = "astrocommunity.bars-and-lines.dropbar-nvim" }, --requires nvim 0.10 dev
   -- completion
   { import = "astrocommunity.completion.copilot-lua" },
   -- diagnostics
