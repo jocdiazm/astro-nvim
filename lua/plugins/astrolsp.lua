@@ -45,6 +45,32 @@ return {
     ---@diagnostic disable: missing-fields
     config = {
       -- clangd = { capabilities = { offsetEncoding = "utf-8" } },
+      tailwindcss = {
+        settings = {
+          tailwindCSS = {
+            experimental = {
+              classRegex = {
+                { "cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]" },
+                { "cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)" },
+              },
+            },
+          },
+        },
+      },
+      vtsls = {
+        settings = {
+          typescript = {
+            suggest = {
+              completeFunctionCalls = true,
+            },
+            preferences = {
+              importModuleSpecifier = "non-relative",
+              importModuleSpecifierEnding = "minimal",
+              importModuleSpecifierPreference = "non-relative",
+            },
+          },
+        },
+      },
     },
     -- customize how language servers are attached
     handlers = {
