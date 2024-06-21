@@ -106,9 +106,17 @@ return {
       opts.sources = cmp.config.sources {
         { name = "nvim_lsp", priority = 1000 },
         { name = "luasnip", priority = 750 },
+        { name = "supermaven", priority = 700 },
         { name = "copilot", priority = 700 },
         { name = "buffer", priority = 500 },
         { name = "path", priority = 250 },
+      }
+      opts.formatting = {
+        format = require("lspkind").cmp_format {
+          mode = "symbol",
+          max_width = 50,
+          symbol_map = { Supermaven = "" },
+        },
       }
     end,
   },

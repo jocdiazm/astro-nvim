@@ -3,7 +3,7 @@ return {
   name = "barbecue",
   enabled = false,
   lazy = true,
-  -- event = "User AstroFile",
+  event = "User AstroFile",
   priority = 500,
   version = "*",
   dependencies = {

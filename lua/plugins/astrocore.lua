@@ -22,7 +22,7 @@ return {
     -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
     diagnostics = {
       virtual_text = true,
-      underline = true,
+      underline = false,
     },
     -- vim options can be configured here
     options = {
@@ -34,6 +34,7 @@ return {
         spell = false, -- sets vim.opt.spell
         signcolumn = "yes", -- sets vim.opt.signcolumn to auto
         wrap = false, -- sets vim.opt.wrap
+        showtabline = 0, -- hides tabline
       },
       g = { -- vim.g.<key>
         -- configure global vim variables (vim.g) NOTE: `mapleader` and `maplocalleader` must be set in the AstroNvim opts or before `lazy.setup` This can be found in the `lua/lazy_setup.lua` file

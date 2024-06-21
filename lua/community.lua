@@ -15,6 +15,7 @@ return {
   { import = "astrocommunity.diagnostics.trouble-nvim" },
   -- motion
   -- { import = "astrocommunity.motion.leap-nvim" },
+  { import = "astrocommunity.motion.mini-surround" },
   -- utilities
   { import = "astrocommunity.utility.noice-nvim" },
   -- packs
