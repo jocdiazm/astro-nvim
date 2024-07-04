@@ -26,6 +26,7 @@ return {
     "hrsh7th/nvim-cmp",
     dependencies = {
       "hrsh7th/cmp-nvim-lsp",
+      "hrsh7th/cmp-nvim-lsp-signature-help",
       "L3MON4D3/LuaSnip",
       "saadparwaiz1/cmp_luasnip",
       -- "rafamadriz/friendly-snippets",
@@ -51,12 +52,13 @@ return {
       -- modify the mapping part of the table
       if not opts.mapping then opts.mapping = {} end
       opts.mapping["<C-Space>"] = cmp.mapping.complete()
-      opts.mapping["<CR>"] = cmp.mapping.confirm { select = true, behavior = cmp.ConfirmBehavior.Insert }
+      opts.mapping["<CR>"] = cmp.mapping.confirm { select = false, behavior = cmp.ConfirmBehavior.Insert }
+      opts.preselect = cmp.PreselectMode.None
       opts.mapping["<Tab>"] = cmp.mapping(function(fallback)
         if luasnip.expand_or_jumpable() then
           luasnip.expand_or_jump() --original working
-        elseif cmp.visible() then
-          cmp.select_next_item()
+        -- elseif cmp.visible() then
+        --   cmp.select_next_item()
         elseif has_words_before() then
           cmp.complete()
         else
@@ -105,6 +107,7 @@ return {
 
       opts.sources = cmp.config.sources {
         { name = "nvim_lsp", priority = 1000 },
+        -- { name = "nvim_lsp_signature_help", priority = 1000 },
         { name = "luasnip", priority = 750 },
         { name = "supermaven", priority = 700 },
         { name = "copilot", priority = 700 },

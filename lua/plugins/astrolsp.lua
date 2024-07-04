@@ -128,6 +128,12 @@ return {
     on_attach = function(client, bufnr)
       -- this would disable semanticTokensProvider for all clients
       -- client.server_capabilities.semanticTokensProvider = nil
+      -- require("lsp_signature").on_attach({
+      --   bind = true, -- This is mandatory, otherwise border config won't get registered.
+      --   handler_opts = {
+      --     border = "rounded",
+      --   },
+      -- }, bufnr)
     end,
   },
 }
