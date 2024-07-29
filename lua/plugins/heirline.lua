@@ -10,6 +10,7 @@ return {
   },
   {
     "rebelot/heirline.nvim",
+    enabled = false,
     opts = function(_, opts)
       local status = require "astroui.status"
       opts.statusline = { -- statusline
@@ -44,4 +45,5 @@ return {
       return opts
     end,
   },
+  { "echasnovski/mini.statusline", version = "*", opts = {} },
 }
