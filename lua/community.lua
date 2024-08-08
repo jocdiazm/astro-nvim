@@ -7,6 +7,8 @@ return {
   "AstroNvim/astrocommunity",
   -- themes
   { import = "astrocommunity.colorscheme.catppuccin" },
+  -- telescope
+  { import = "astrocommunity.recipes.telescope-lsp-mappings" },
   -- bars and lines
   { import = "astrocommunity.bars-and-lines.dropbar-nvim" }, --requires nvim 0.10 dev
   -- completion
