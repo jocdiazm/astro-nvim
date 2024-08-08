@@ -29,11 +29,11 @@ return {
     },
     keys = {
       { "<leader>fh", "<cmd>Telescope find_files hidden=true<cr>", desc = "Telescope Files Hidden" },
-      -- {
-      --   "<leader>lss",
-      --   "<cmd>Telescope lsp_workspace_symbols path_display={'smart'} hidden=true<cr>",
-      --   desc = "Telescope Find Workspace symbols",
-      -- },
+      {
+        "<leader>lsw",
+        "<cmd>Telescope lsp_workspace_symbols path_display={'smart'} hidden=true<cr>",
+        desc = "Telescope Find Workspace symbols",
+      },
     },
   },
 
