@@ -23,6 +23,7 @@ return {
   -- utilities
   { import = "astrocommunity.utility.noice-nvim" },
   -- packs
+  { import = "astrocommunity.pack.dart" },
   { import = "astrocommunity.pack.docker" },
   { import = "astrocommunity.pack.sql" },
   { import = "astrocommunity.pack.lua" },
